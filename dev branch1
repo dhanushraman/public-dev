@@ -1,0 +1,11 @@
+name:docker
+
+  on:
+schedule:
+- cron: '25 8 * * *'
+  push:
+branches: ["master"]
+# publish server tags as releases"
+  tags: ['v*.*.*']
+pull_request:
+branches: [ "master"]
